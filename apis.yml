@@ -1,7 +1,26 @@
 aid: finern
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/finern.png
 name: finern
-description: finern is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Finern (Finern Automation) is a China-based industrial automation company that designs
+  and builds fully automated production lines and intelligent measurement systems for manufacturing.
+  It serves five sectors — automotive, electronics, new energy (battery/EV), healthcare/pharmaceutical
+  equipment, and consumer goods — with automated assembly, testing, and inspection systems. The company
+  reports 600+ personnel, 30,000+ square meters of facilities, 100+ global clients, 8 international
+  sites, and 4 R&D centers. Surfaced as a portfolio company of Qiming Venture Partners and added to the
+  API Evangelist network. Finern publishes a corporate marketing website but does not currently expose
+  any public API, developer portal, SDK, or machine-readable discovery surface (no /.well-known/*,
+  llms.txt, or OpenAPI found on probe).
 url: https://raw.githubusercontent.com/api-evangelist/finern/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Industrial Automation
+- Manufacturing
+- Automation
+- Intelligent Measurement
+- Robotics
+- Automotive
+- Electronics
+- New Energy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/finern-domain-security.yml
 - type: Website
-  url: https://finern.com
+  url: https://www.finern.com
+- type: Support
+  url: https://www.finern.com/contact.html
+- type: Blog
+  url: https://www.finern.com/news.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
